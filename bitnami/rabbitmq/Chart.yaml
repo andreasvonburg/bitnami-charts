@@ -4,16 +4,16 @@
 annotations:
   images: |
     - name: os-shell
-      image: docker.io/bitnami/os-shell:12-debian-12-r50
+      image: docker.io/andreasvonburg/os-shell:12-debian-12-r50
     - name: rabbitmq
-      image: docker.io/bitnami/rabbitmq:4.1.3-debian-12-r1
+      image: docker.io/andreasvonburg/rabbitmq:4.1.3-debian-12-r1
   licenses: Apache-2.0
   tanzuCategory: service
 apiVersion: v2
 appVersion: 4.1.3
 dependencies:
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://registry-1.docker.io/andreasvonburg
   tags:
   - bitnami-common
   version: 2.x.x
@@ -27,8 +27,8 @@ keywords:
 - AMQP
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
-  url: https://github.com/bitnami/charts
-name: rabbitmq
+  url: https://github.com/andreasvonburg/charts
+name: rabbitmq-chart
 sources:
-- https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq
+- https://github.com/andreasvonburg/charts/tree/main/bitnami/rabbitmq
 version: 16.0.15
